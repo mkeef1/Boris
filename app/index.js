@@ -13,6 +13,17 @@ app.get('/', function(req, res){
   res.render('index');
 });
 
+app.get('/about', function(req, res){
+  res.render('about');
+});
+app.get('/discography', function(req, res){
+  res.render('discography');
+});
+app.get('/tours', function(req, res){
+  res.render('tours');
+});
+
+
 app.listen(2000, function(){
-  console.log('Boris is playing!');
+  console.log('Boris is Playing!');
 });
