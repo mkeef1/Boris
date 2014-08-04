@@ -23,7 +23,8 @@ app.get('/tours', function(req, res){
   res.render('tours');
 });
 
+var port = process.env.PORT;
 
-app.listen(2000, function(){
-  console.log('Boris is Playing!');
+app.listen(process.env.PORT, function(){
+  console.log('Boris is Playing, on Port ', port);
 });
